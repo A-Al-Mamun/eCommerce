@@ -18,6 +18,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
  }
  .container{
     max-width: 1160px;
