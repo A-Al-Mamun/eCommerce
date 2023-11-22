@@ -73,7 +73,11 @@
    padding: 0 10px;
    font-size: 20px;
    color: var(--textColor);
+   transition: 0.4s;
  }
+ .header-inner .menu nav a:hover{
+  color: var(--textHoverColor);
+}
 
  .bar-menu{
    position: absolute;
@@ -95,9 +99,11 @@
  .bar-menu li a{
    display: inline-block;
    color: #000!important;
+   transition: 0.4s;
  }
- .bar-menu li a:hover{}
-
+ .bar-menu li a:hover{
+  color: #00000040!important;
+}
  .header-inner .header-btn{
    flex-basis: 20%;
    text-align: right;
