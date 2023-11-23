@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCommerse LogIn Page </title>
+    <title>eCommerse Register Page </title>
 
     <!-- Favicon Icon setup -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
@@ -13,6 +13,7 @@
 
 
     <!-- Custom Css link -->
+    <link rel="stylesheet" href="../assets/css/register.css">
     <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -21,15 +22,13 @@
     <!-- Main Section Start -->
     <section class="main">
         <img src="../assets/img/logo.png" alt="logo">
-        <h1>Customer Log In</h1>
-        <div class="login-body">
-            <input type="email" name="email" id="log-email" placeholder="User eMail">
-            <input type="password" name="pass" id="log-pass" placeholder="Password">
-            <button type="submit"><a class="log-btn" onclick="mn()" href="#">Login</a></button><a href="">Forgot Password</a>
-            <hr>
-            <p>You have not account create, So Please register First</p>
-
-            <button><a href="./register.html">Register</a></button>
+        <h1>Customer Register</h1>
+        <div class="register-body">
+            <input type="text" name="name" id="name" placeholder="User Name">
+            <input type="email" name="email" id="email" placeholder="User eMail">
+            <input type="number" name="phone" id="phone" placeholder="User Number">
+            <input type="password" name="pass" id="pass" placeholder="Password">
+            <button type="submit"><a class="register" href="./login.html">Register</a></button>
 
         </div>
     </section>
@@ -37,9 +36,7 @@
 
 
     <!-- Custome JavaScript link -->
-    <script src="../assets/js/login.js"></script>
-    <script src="../assets/js/index.js"></script>
-    
-    
+    <script src="../assets/js/index.js">
+    </script>
 </body>
 </html>

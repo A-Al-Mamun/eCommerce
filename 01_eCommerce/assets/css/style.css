@@ -79,7 +79,8 @@
   color: var(--textHoverColor);
 }
 
- .bar-menu{
+
+.bar-menu{
    position: absolute;
    top: 62.5px;
    left: 0;
@@ -88,22 +89,23 @@
    background: rgba(255, 255, 0, 0.247);
    display: none;
  }
+
  .bar-menu li{
    display: block;
    list-style: none;
-   padding: 10px 0;
+   padding: 10px 20px;
  }
- .bar-menu .firstLi{
-   margin-left: -20px;
- }
- .bar-menu li a{
+
+.bar-menu li a{
    display: inline-block;
    color: #000!important;
+   padding: 0!important;
    transition: 0.4s;
  }
  .bar-menu li a:hover{
   color: #00000040!important;
 }
+
  .header-inner .header-btn{
    flex-basis: 20%;
    text-align: right;

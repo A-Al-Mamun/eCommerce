@@ -1,37 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
- }
-
- body{
-   position: relative;
- }
-
- .home{
-   position: absolute;
-   top: 80px;
-   left: 100px;
- }
-
- .main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- }
- .main img{
-    width: 150px;
- }
- .main h1{
-    text-transform: uppercase;
-    margin-bottom: 20px;
- }
-
- .main .login-body{
+ .main .register-body{
     width: 350px;
     padding: 25px 10px;
     border-radius: 10px;
@@ -39,7 +6,7 @@
     display: flex;
     flex-direction: column;
  }
- .main .login-body input{
+ .main .register-body input{
     font-size: 14px;
     padding: 8px 4px;
     border-radius: 5px;
@@ -47,13 +14,13 @@
     border: none;
     box-shadow: 0 0 8px #00000040;
  }
- .main .login-body button{
+ .main .register-body button{
     border-radius: 5px;
     margin-bottom: 5px;
     border: 0;
     background-color: var(--bgColor);
  }
- .main .login-body button a{
+ .main .register-body button a{
     display: inline-block;
     font-size: 18px;
     color: var(--textColor);
@@ -62,7 +29,7 @@
     text-decoration: none;
  }
 
- .main .login-body a{
+ .main .register-body a{
     text-decoration: underline;
     display: inline-block;
     padding: 10px 0;
