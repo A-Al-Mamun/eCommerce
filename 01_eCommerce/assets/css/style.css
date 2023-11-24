@@ -161,6 +161,22 @@
   color: var(--textColor);
   padding: 20px;
  }
+
+ .slider-info{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+ }
+ .slider-info-item{
+  background: #ffffff70;
+  margin: 5px;
+ }
+ .slider-info-item.active{
+  background: #fff;
+ }
+ .slider-info-item h3{}
+ .slider-info-item p{}
  /* 04. Services */
  /* 05. About */
  /* 06. Upcoming Work */
