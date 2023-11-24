@@ -8,6 +8,7 @@ const cat = () => {
     }
     else{
         barMenu.style.display = 'block';
+        barMenu.style.zIndex = '10';
     }
 }
 
@@ -41,8 +42,6 @@ slidePre.addEventListener('click', () => {
 
     slider.style.transform = `translateX(-${slideIndex * 100}%)`;
 
-    sliderInfo.style.transform = `translateX(-${slideIndex * 100}%)`;
-
 })
 
 slideNext.addEventListener('click', () => {
@@ -56,6 +55,4 @@ slideNext.addEventListener('click', () => {
     sliderInfoItem[slideIndex].classList.add('active');
 
     slider.style.transform = `translateX(-${slideIndex * 100}%)`;
-
-    sliderInfo.style.transform = `translateX(-${slideIndex * 100}%)`;
 })
