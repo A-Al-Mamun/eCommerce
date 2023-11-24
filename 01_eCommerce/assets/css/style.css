@@ -125,6 +125,41 @@
    color: var(--textHoverColor);
  }
  /* 03. Slide */
+ .slide{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+ }
+ .slider{
+  display: flex;
+ }
+ .slider-item{
+  flex: 0 0 100%;
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .slider-item.active{
+  transform: translateX(0px);
+ }
+
+ .slider-order{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .slider-order .slide-pre,
+ .slide-next{
+  font-size: 28px;
+  color: var(--textColor);
+  padding: 20px;
+ }
  /* 04. Services */
  /* 05. About */
  /* 06. Upcoming Work */
