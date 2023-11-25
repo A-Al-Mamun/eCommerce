@@ -20,13 +20,13 @@ let slidePre = document.getElementsByClassName('slide-pre')[0];
 let slideNext = document.getElementsByClassName('slide-next')[0];
 
 let slider = document.getElementsByClassName('slider')[0];
-let sliderItem = document.querySelectorAll('.slider-item');
+let sliderItem = document.querySelectorAll('.slider-item'); 
 
 
 let sliderInfo = document.getElementsByClassName('slider-info')[0];
 let sliderInfoItem = document.querySelectorAll('.slider-info-item');
 
-let slideIndex = 0;
+var slideIndex = 0;
 sliderItem[slideIndex].classList.add('active');
 sliderInfoItem[slideIndex].classList.add('active');
 
@@ -56,3 +56,8 @@ slideNext.addEventListener('click', () => {
 
     slider.style.transform = `translateX(-${slideIndex * 100}%)`;
 })
+
+
+
+
+
