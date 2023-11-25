@@ -201,10 +201,15 @@
  /* 04. Services */
  /* 05. About */
  .about{
-  
+  max-width: 1160px;
+  margin: 0 auto;
+  height: 500px;
  }
  .circle{
-
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #000;
  }
  /* 06. Upcoming Work */
  /* 07. Gallary */
