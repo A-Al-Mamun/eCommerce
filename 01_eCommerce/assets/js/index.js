@@ -12,6 +12,23 @@ const cat = () => {
     }
 }
 
+let barMenuElements = document.querySelectorAll('.bar-menu li');
+
+let innerMenu = document.querySelectorAll('.inner-bar-menu');
+
+// let barMenuIndex = 0;
+for(let i = 0; i < barMenuElements.length; i++){
+    barMenuElements[i].addEventListener('click', () => {
+        innerMenu[i].classList.toggle('active');
+        innerMenu[i].display.zIndex = '999';
+    });
+}
+
+// console.log(barMenuElements[1].innerText);
+// console.log(innerMenu[0].innerText);
+// console.log(innerMenu);
+
+
 
 
 // Slide Section 
