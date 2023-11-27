@@ -30,6 +30,25 @@ for(let i = 0; i < barMenuElements.length; i++){
 
 
 
+// Scroll Hover Section Start
+
+let scrollHover = document.getElementsByClassName('scroll-hover')[0];
+let closeHover = document.getElementsByClassName('hover-close')[0];
+let body = document.body;
+
+function scrollBody(){
+    scrollHover.style.display = 'flex'
+
+    closeHover.addEventListener('click', () => {
+        scrollHover.style.display = 'none'
+    })
+}
+// console.log(body)
+// body.addEventListener('scroll', () => {
+//     scrollHover.style.display = 'block';
+// })
+
+
 
 // Slide Section 
 

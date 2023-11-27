@@ -159,6 +159,63 @@
    color: var(--textHoverColor);
  }
 
+ /* Scroll Hover Section Start */
+ .scroll-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #00000095;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+ }
+ .scroll-inner{
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  position: relative;
+ }
+
+ .scroll-inner .hover-close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 28px;
+  transition: scale ease 0.2s;
+ }
+ .scroll-inner .hover-close:active{
+  scale: 0.6;
+ }
+
+ .scroll-inner p{
+  text-align: center;
+  margin-bottom: 20px;
+ }
+ .scroll-inner p span{
+  color: orangered;
+  font-size: 80px;
+ }
+ .scroll-inner input{
+  padding: 10px;
+ }
+ .scroll-inner #subs{
+  background: orangered;
+  border-radius: 0 5px 5px 0 ;
+  border: none;
+  font-size: 17px;
+ }
+ .scroll-inner h3{
+  text-align: center;
+  padding: 10px 0;
+ }
+
+ /* Scroll Hover Section End */
 
  /* 03. Slide */
  .slide{
@@ -211,7 +268,7 @@
   font-size: 28px;
   color: var(--textColor);
   padding: 20px;
-  z-index: 999;
+  z-index: 10;
   cursor: pointer;
  }
 
