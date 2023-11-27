@@ -2,11 +2,12 @@
 
 let logBtn = document.getElementsByClassName("log-btn")[0];
 
+// alert(logMain);
 logBtn.addEventListener('click', () => {
     let email = document.getElementById('log-email').value;
     let pass = document.getElementById('log-pass').value;
     
-    alert(pass);
+    // alert(pass);
     let userEmail = "mn@gmail.com"; 
     let userPass = "123";
     
@@ -14,6 +15,7 @@ logBtn.addEventListener('click', () => {
     if((userEmail == email) && (userPass == pass)){
         alert("Seccessfully LogIn"); 
         window.location.assign("/01_HTML_CSS_JS/eCommerce/01_eCommerce/index.html");
+        console.log(logMain);
     }else{
         alert('Not matched');
     }

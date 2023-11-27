@@ -1,4 +1,3 @@
-
 // Nav Bar
 const cat = () => {
     var barMenu = document.getElementsByClassName('bar-menu')[0];
@@ -29,12 +28,11 @@ for(let i = 0; i < barMenuElements.length; i++){
 // console.log(innerMenu);
 
 
-
+ 
 // Scroll Hover Section Start
 
 let scrollHover = document.getElementsByClassName('scroll-hover')[0];
 let closeHover = document.getElementsByClassName('hover-close')[0];
-let body = document.body;
 
 function scrollBody(){
     scrollHover.style.display = 'flex'
