@@ -126,10 +126,12 @@ productRight.addEventListener('click', () => {
 })
 
 let proView = document.getElementsByClassName('view')[0];
+let proViewImg = document.querySelector('.pro-item img');
 let proCart = document.getElementsByClassName('cart')[0];
 
 proView.addEventListener('click', () => {
-    console.log('hello');
+    proViewImg.classList.toggle('active');
+    productItems.style.display = "none";
 })
 
 
