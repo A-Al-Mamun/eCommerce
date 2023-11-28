@@ -125,6 +125,13 @@ productRight.addEventListener('click', () => {
     productItem.style.transform = `translateX(-${proIndex * 33}%)`;
 })
 
+let proView = document.getElementsByClassName('view')[0];
+let proCart = document.getElementsByClassName('cart')[0];
+
+proView.addEventListener('click', () => {
+    console.log('hello');
+})
+
 
 
 
