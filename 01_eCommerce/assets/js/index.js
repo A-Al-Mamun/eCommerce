@@ -94,4 +94,38 @@ slideNext.addEventListener('click', () => {
 
 
 
+// Product
+
+let productLeft = document.getElementsByClassName('pro-left')[0];
+let productRight = document.getElementsByClassName('pro-right')[0];
+
+let productItem = document.getElementsByClassName('pro-items')[0];
+let productItems = document.querySelectorAll('.pro-item');
+
+let proIndex = 0;
+
+productItems[proIndex].classList.add('active');
+
+
+productLeft.addEventListener('click', () => {
+    productItems[proIndex].classList.remove('active');
+
+    proIndex = (proIndex == 0) ? productItems.length - 1 : proIndex - 1;
+    productItems[proIndex].classList.add('active');
+
+    productItem.style.transform = `translateX(-${proIndex * 33}%)`;
+})
+
+productRight.addEventListener('click', () => {
+    productItems[proIndex].classList.remove('active');
+
+    proIndex = (proIndex == productItems.length -1) ? 0 : proIndex + 1;
+    productItems[proIndex].classList.add('active');
+
+    productItem.style.transform = `translateX(-${proIndex * 33}%)`;
+})
+
+
+
+
 
